@@ -1,0 +1,141 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #ff66b2; /* Vibrant pink background */
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+/* Container Styles */
+.container {
+  background: #ff4d94; /* Lighter pink, contrasting against the vibrant background */
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Header Styling */
+header {
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ff1a8c; /* Strong, eye-catching pink */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+/* Button Styles */
+button {
+  background-color: #ff1a8c; /* Bold pink button */
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #e60073; /* Slightly darker shade when hovered */
+  transform: scale(1.1); /* Slight zoom effect for extra sass */
+}
+
+button:active {
+  transform: scale(1);
+}
+
+/* Upload Box Styling */
+.upload-box {
+  background: #ff80e3; /* A soft pastel pink for contrast */
+  padding: 25px 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+input[type="file"] {
+  background: #ffccff; /* Subtle pink with a soft gradient effect */
+  padding: 12px 25px;
+  border-radius: 15px;
+  border: 2px solid #ff66b2;
+  font-size: 16px;
+  color: #ff1a8c;
+  font-weight: 600;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+input[type="file"]:hover {
+  border-color: #ff1a8c; /* Slight glow effect */
+}
+
+/* Results Box Styling */
+.results-box {
+  background: #fff0f5; /* Very light pink background */
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  display: none; /* Initially hidden */
+  margin-top: 30px;
+}
+
+.results-box h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.results-box p {
+  font-size: 1.1em;
+  color: #ff1a8c;
+  margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0.7;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animations for Results Box */
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to the results box */
+.results-box {
+  animation: popIn 0.5s ease-in-out;
+}
